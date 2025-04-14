@@ -32,8 +32,10 @@ final String nickname = "Bpbby";
 const bar = 1000000;
 const double atm = 1.01325 * bar;
 var foo = const [];
-final bar = const [];
+//final bar = const [];
 const baz = [];
+
+// Wildcard variables
 
 void main() {
   print("=== Variable ===");
@@ -57,4 +59,21 @@ void main() {
   lineCountFunction(true);
 
   // name6 = 'alice'; //Not allowed
+
+  // Wildcard variables
+  var _ = 1;
+  //int _ = 2;
+
+  //for (var _ in list) {}
+
+  try {
+    throw '!';
+  } catch (_) {
+    print('oops');
+  }
 }
+
+  class T<_> {}
+  void genericFunction<_>() {}
+
+  //takeGenericCallback(<_>() => true);
