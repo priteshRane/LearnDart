@@ -1,4 +1,4 @@
-import 'Spacecraft.dart';
+import 'Classes.dart';
 
 class Orbiter extends Spacecraft {
   double altitude;
