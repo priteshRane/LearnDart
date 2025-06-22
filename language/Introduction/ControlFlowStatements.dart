@@ -1,5 +1,5 @@
 void main() {
-  var year = 2000;
+  var year = 2014;
   var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
   if (year >= 2001) {
@@ -18,5 +18,6 @@ void main() {
 
   while (year < 2016) {
     year += 1;
+    print(year);
   }
 }

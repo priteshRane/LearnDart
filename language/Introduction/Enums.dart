@@ -22,7 +22,8 @@ enum Planet {
   final bool hasRings;
 
   // Enhanced enums support getters and other methods
-  bool get isGiant => planetType == PlanetType.gas || planetType == PlanetType.ice;
+  bool get isGiant =>
+      planetType == PlanetType.gas || planetType == PlanetType.ice;
 }
 
 void main() {
@@ -30,5 +31,7 @@ void main() {
 
   if (yourPlanet.isGiant) {
     print('You are on a giant planet');
+  } else {
+    print('$yourPlanet is not giant Planet');
   }
 }

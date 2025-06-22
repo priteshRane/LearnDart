@@ -8,13 +8,12 @@ class MockSpacecraft implements Spacecraft {
   late String name;
 
   @override
+  int? get launchYear => launchDate?.year;
+
+  @override
   void describe() {
     // TODO: implement describe
   }
-
-  @override
-  // TODO: implement launchYear
-  int? get launchYear => launchDate?.year;
 }
 
 abstract class Describable {
